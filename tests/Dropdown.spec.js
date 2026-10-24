@@ -9,7 +9,7 @@ test('dropdowns', async ({ page }) => {
     await page.getByRole('button', { name: 'Simple Dropdown' }).click();
     await page.selectOption({value: "option2"});
     await page.waitForTimeout(3000);
-
+  
     //This is dropdown with search box, so we will type the value and select it
     await page.getByRole('button', { name: 'Dropdown with Search' }).click();
     await page.locator('#myInput').fill('Option 3');
@@ -18,4 +18,5 @@ test('dropdowns', async ({ page }) => {
 
     //this is new branch for testing purpose
 
+    //this is new line
 })
