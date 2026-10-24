@@ -16,4 +16,6 @@ test('dropdowns', async ({ page }) => {
     await page.locator('#myInput').press('Enter');
     await page.waitForTimeout(3000);
 
+    //this is new branch for testing purpose
+
 })
