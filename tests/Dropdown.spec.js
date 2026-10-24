@@ -10,5 +10,10 @@ test('dropdowns', async ({ page }) => {
     await page.selectOption({value: "option2"});
     await page.waitForTimeout(3000);
 
+    //This is dropdown with search box, so we will type the value and select it
+    await page.getByRole('button', { name: 'Dropdown with Search' }).click();
+    await page.locator('#myInput').fill('Option 3');
+    await page.locator('#myInput').press('Enter');
+    await page.waitForTimeout(3000);
 
 })
