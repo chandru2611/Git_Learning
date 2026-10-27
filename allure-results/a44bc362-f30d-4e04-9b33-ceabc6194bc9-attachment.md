@@ -1,0 +1,939 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Windowshandling.spec.js >> Windows Handling
+- Location: tests\Windowshandling.spec.js:3:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: page.waitForTimeout: Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=f6e1]:
+  - generic [ref=f6e4]:
+    - generic [ref=f6e7]:
+      - generic [ref=f6e8]:
+        - generic [ref=f6e9]:
+          - link "navigate to Orders" [ref=f6e11] [cursor=pointer]:
+            - /url: https://www.reliancedigital.in/c/order/tracking
+            - text: Orders
+          - link "navigate to Contact us" [ref=f6e13] [cursor=pointer]:
+            - /url: https://www.reliancedigital.in/c/contact-us
+            - text: Contact us
+          - link "navigate to Resource Center" [ref=f6e15] [cursor=pointer]:
+            - /url: https://www.reliancedigital.in/c/resource-center
+            - text: Resource Center
+          - link "navigate to Find a store" [ref=f6e17] [cursor=pointer]:
+            - /url: https://www.reliancedigital.in/c/store-locator
+            - text: Find a store
+        - generic [ref=f6e21]:
+          - link "reliance digital logo" [ref=f6e23] [cursor=pointer]:
+            - /url: /
+            - img "Reliance Digital" [ref=f6e25]
+          - textbox "Search Products & Brands" [ref=f6e32]
+          - generic [ref=f6e33]:
+            - button "Set Pincode" [ref=f6e40]:
+              - generic [ref=f6e41]: 400001 - Mumbai
+              - generic [ref=f6e47] [cursor=pointer]
+            - link "goto cart" [ref=f6e51] [cursor=pointer]:
+              - /url: /cart/bag/
+              - generic [ref=f6e54]: Cart
+            - button "Wishlist" [ref=f6e56] [cursor=pointer]
+            - generic [ref=f6e62] [cursor=pointer]:
+              - button [ref=f6e63]:
+                - img "Account Details" [ref=f6e64]
+              - generic [ref=f6e66]: Login
+      - generic [ref=f6e72]:
+        - button "Scroll categories left" [ref=f6e73] [cursor=pointer]:
+          - img "left arrow" [ref=f6e74]
+        - generic [ref=f6e75]:
+          - link "open Mobiles" [ref=f6e79] [cursor=pointer]:
+            - /url: /sections/mobiles
+            - img "navIcon" [ref=f6e82]
+            - generic [ref=f6e83]: Mobiles
+          - link "open Laptops" [ref=f6e87] [cursor=pointer]:
+            - /url: /sections/laptops
+            - img "navIcon" [ref=f6e90]
+            - generic [ref=f6e91]: Laptops
+          - link "open Tablets" [ref=f6e95] [cursor=pointer]:
+            - /url: /sections/tablets
+            - img "navIcon" [ref=f6e98]
+            - generic [ref=f6e99]: Tablets
+          - link "open Audio" [ref=f6e103] [cursor=pointer]:
+            - /url: /sections/audio
+            - img "navIcon" [ref=f6e106]
+            - generic [ref=f6e107]: Audio
+          - link "open Televisions" [ref=f6e111] [cursor=pointer]:
+            - /url: /sections/televisions
+            - img "navIcon" [ref=f6e114]
+            - generic [ref=f6e115]: Televisions
+          - link "open Small Appliances" [ref=f6e119] [cursor=pointer]:
+            - /url: /sections/small-domestic-appliances
+            - img "navIcon" [ref=f6e122]
+            - generic [ref=f6e123]: Small Appliances
+          - link "open Refrigerators" [ref=f6e127] [cursor=pointer]:
+            - /url: /sections/refrigerators
+            - img "navIcon" [ref=f6e130]
+            - generic [ref=f6e131]: Refrigerators
+          - link "open Air Conditioners" [ref=f6e135] [cursor=pointer]:
+            - /url: /sections/air-conditioners
+            - img "navIcon" [ref=f6e138]
+            - generic [ref=f6e139]: Air Conditioners
+          - link "open Smart Wearables" [ref=f6e143] [cursor=pointer]:
+            - /url: /sections/smart-watches
+            - img "navIcon" [ref=f6e146]
+            - generic [ref=f6e147]: Smart Wearables
+          - link "open Personal Care" [ref=f6e151] [cursor=pointer]:
+            - /url: /sections/personal-care-appliances
+            - img "navIcon" [ref=f6e154]
+            - generic [ref=f6e155]: Personal Care
+          - link "open Washing Machines" [ref=f6e159] [cursor=pointer]:
+            - /url: /sections/washing-machines
+            - img "navIcon" [ref=f6e162]
+            - generic [ref=f6e163]: Washing Machines
+          - link "open All Categories" [ref=f6e167] [cursor=pointer]:
+            - /url: /c/all-categories
+            - img "navIcon" [ref=f6e170]
+            - generic [ref=f6e171]: All Categories
+        - button "Scroll categories right" [ref=f6e175] [cursor=pointer]:
+          - img "right arrow" [ref=f6e176]
+    - generic [ref=f6e181]:
+      - generic [ref=f6e184]:
+        - navigation "breadcrumb" [ref=f6e185]:
+          - list [ref=f6e186]:
+            - listitem "Home" [ref=f6e187]:
+              - link "Home" [ref=f6e188] [cursor=pointer]:
+                - /url: /
+              - img "Breadcrumb Icon" [ref=f6e189]
+            - listitem "Tablets"
+        - heading "Tablets" [level=1] [ref=f6e190]
+      - generic [ref=f6e198]:
+        - generic [ref=f6e200]:
+          - link "Go to Image" [ref=f6e202] [cursor=pointer]:
+            - /url: https://www.reliancedigital.in/collection/ipads/?is_available=true&sort_on=latest&page_no=1&page_size=12&page_type=number
+            - img "Banner of Image" [ref=f6e205]
+          - link "Go to Image" [ref=f6e207] [cursor=pointer]:
+            - /url: https://www.reliancedigital.in/product/hp-omnipad-12-12-m0005qu-convertible-laptop-snapdragon-sm6475q8-gb128-gb-ufcqualcomm-adreno-gpuandroid-16-3038-cm-12-inch-denim-blue-mssvnm-10457081?internal_source=search_results
+            - img "Banner of Image" [ref=f6e210]
+          - generic [ref=f6e211]:
+            - link "Go to Image":
+              - /url: https://www.reliancedigital.in/product/lenovo-tab-plus-gen-2-3073-cm-121-inch-wi-fi-tablet-128-gb-8-gb-ram-celestial-white-zaht0118in-mryzna-10323010
+          - generic [ref=f6e212]:
+            - link "Go to Image":
+              - /url: https://www.reliancedigital.in/collection/latest-oneplus-pads/?is_available=true
+          - generic [ref=f6e213]:
+            - link "Go to Image":
+              - /url: https://www.reliancedigital.in/collection/redmi-pad-2-pro-tablets/?internal_source=hp&internal_medium=npi&internal_campaign=redmi-pad-2-pro&is_available=true
+          - generic [ref=f6e214]:
+            - link "Go to Image":
+              - /url: https://www.reliancedigital.in/collection/lenovo-yoga-tab-plus-tablets/?is_available=true
+          - generic [ref=f6e215]:
+            - link "Go to Image":
+              - /url: https://www.reliancedigital.in/collection/lenovo-idea-tab-tablets/?page_no=1&page_size=12&page_type=number&is_available=true
+          - generic [ref=f6e216]:
+            - link "Go to Image":
+              - /url: https://www.reliancedigital.in/collection/redmi-pad-2-tablet-20250624/?is_available=true&page_no=1&page_size=12&page_type=number
+        - generic [ref=f6e217]:
+          - button "banner 1" [ref=f6e218]
+          - button "banner 2" [ref=f6e219]
+          - button "banner 3" [ref=f6e220]
+          - button "banner 4" [ref=f6e221]
+          - button "banner 5" [ref=f6e222]
+          - button "banner 6" [ref=f6e223]
+          - button "banner 7" [ref=f6e224]
+          - button "banner 8" [ref=f6e225]
+        - generic:
+          - generic:
+            - generic [ref=f6e226] [cursor=pointer]
+            - generic [ref=f6e228] [cursor=pointer]
+      - generic [ref=f6e234]:
+        - generic "Fresh Arrival" [ref=f6e237]
+        - generic [ref=f6e240]:
+          - link "goto banner" [ref=f6e241] [cursor=pointer]:
+            - /url: /collection/xiaomi-pad-8-tablets/?is_available=true
+            - img "banner" [ref=f6e242]
+          - link "goto banner" [ref=f6e243] [cursor=pointer]:
+            - /url: /product/lenovo-tab-plus-gen-2-3073-cm-121-inch-wi-fi-tablet-128-gb-8-gb-ram-celestial-white-zaht0118in-mryzna-10323010
+            - img "banner" [ref=f6e244]
+          - link "goto banner" [ref=f6e245] [cursor=pointer]:
+            - /url: /collection/asus-pad/?is_available=true
+            - img "banner" [ref=f6e246]
+          - link "goto banner" [ref=f6e247] [cursor=pointer]:
+            - /url: /collection/moto-pad-70-pro/?is_available=true
+            - img "banner" [ref=f6e248]
+      - generic [ref=f6e255]:
+        - generic [ref=f6e256]:
+          - generic [ref=f6e257]:
+            - generic "Latest 5G Tablets" [ref=f6e258]
+            - generic [ref=f6e259]: No Cost EMI Available
+          - link "View all" [ref=f6e260] [cursor=pointer]:
+            - /url: /collection/5g-tablets/?is_available=true
+            - generic [ref=f6e261]: View All
+        - generic [ref=f6e267] [cursor=pointer]:
+          - generic [ref=f6e268]:
+            - link "Redmi Pad 2 Pro 30.73 cm (12.1 inch) Wi-Fi + 5G Tablet, 8 GB RAM, 128 GB, Graphite Grey, 71152 ₹29,999.00 32% OFF MRP ₹43,999.00" [ref=f6e269]:
+              - /url: /product/redmi-pad-2-pro-3073-cm-121-inch-wi-fi-5g-tablet-8-gb-ram-128-gb-graphite-grey-71152-mk5fr0-9716706
+              - heading "Redmi Pad 2 Pro 30.73 cm (12.1 inch) Wi-Fi + 5G Tablet, 8 GB RAM, 128 GB, Graphite Grey, 71152" [level=5] [ref=f6e272]
+              - generic [ref=f6e273]:
+                - generic [ref=f6e274]: ₹29,999.00
+                - generic [ref=f6e275]: 32% OFF
+              - paragraph [ref=f6e276]: MRP ₹43,999.00
+            - group "Best price including applicable offers. Open breakdown from Offers link." [ref=f6e279]:
+              - paragraph [ref=f6e282]:
+                - generic "₹27,749.00" [ref=f6e283]:
+                  - generic [aria-hidden] [ref=f6e284]: ₹27,749.00
+                - generic [ref=f6e285]:
+                  - text: with all applicable
+                  - button "View best price breakdown" [ref=f6e286]: Offers
+            - img "Wishlist this product" [ref=f6e291]
+          - generic [ref=f6e293]:
+            - link "Lenovo Idea Tab Plus 30.73 cm (12.1 inch) WiFi + 5G Tablet with Pen, 256 GB, 12 GB RAM, Luna Grey, ZAGF0150IN ₹35,999.00 38% OFF MRP ₹58,000.00" [ref=f6e294]:
+              - /url: /product/lenovo-idea-tab-plus-3073-cm-121-inch-wifi-5g-tablet-with-pen-256-gb-12-gb-ram-luna-grey-zagf0150in-mjh6m2-9701117
+              - heading "Lenovo Idea Tab Plus 30.73 cm (12.1 inch) WiFi + 5G Tablet with Pen, 256 GB, 12 GB RAM, Luna Grey, ZAGF0150IN" [level=5] [ref=f6e297]
+              - generic [ref=f6e298]:
+                - generic [ref=f6e299]: ₹35,999.00
+                - generic [ref=f6e300]: 38% OFF
+              - paragraph [ref=f6e301]: MRP ₹58,000.00
+            - img "Wishlist this product" [ref=f6e306]
+          - generic [ref=f6e308]:
+            - link "Samsung Tablet A11+ 27.94 cm (11 Inch) Wi-Fi + 5G Tablet, 6 GB RAM, 128 GB, Gray, SM-X236BZAAINS ₹31,999.00 33% OFF MRP ₹47,999.00" [ref=f6e309]:
+              - /url: /product/samsung-tablet-a11-2794-cm-11-inch-wi-fi-5g-tablet-6-gb-ram-128-gb-gray-sm-x236bzaains-miftx3-9653444
+              - heading "Samsung Tablet A11+ 27.94 cm (11 Inch) Wi-Fi + 5G Tablet, 6 GB RAM, 128 GB, Gray, SM-X236BZAAINS" [level=5] [ref=f6e312]
+              - generic [ref=f6e313]:
+                - generic [ref=f6e314]: ₹31,999.00
+                - generic [ref=f6e315]: 33% OFF
+              - paragraph [ref=f6e316]: MRP ₹47,999.00
+            - group "Best price including applicable offers. Open breakdown from Offers link." [ref=f6e319]:
+              - paragraph [ref=f6e322]:
+                - generic "₹26,999.00" [ref=f6e323]:
+                  - generic [aria-hidden] [ref=f6e324]: ₹26,999.00
+                - generic [ref=f6e325]:
+                  - text: with all applicable
+                  - button "View best price breakdown" [ref=f6e326]: Offers
+            - img "Wishlist this product" [ref=f6e331]
+          - generic [ref=f6e333]:
+            - link "Moto Pad 70 32.25 cm (12.7 Inch) WiFi + 5G Tablet with Pen, 8 GB RAM, 256 GB, Pantone Sea Angel, ZAJC0004IN ₹36,999.00 54% OFF MRP ₹80,000.00" [ref=f6e334]:
+              - /url: /product/moto-pad-70-3225-cm-127-inch-wifi-5g-tablet-with-pen-8-gb-ram-256-gb-pantone-sea-angel-zajc0004in-ms4gwm-10327652
+              - heading "Moto Pad 70 32.25 cm (12.7 Inch) WiFi + 5G Tablet with Pen, 8 GB RAM, 256 GB, Pantone Sea Angel, ZAJC0004IN" [level=5] [ref=f6e337]
+              - generic [ref=f6e338]:
+                - generic [ref=f6e339]: ₹36,999.00
+                - generic [ref=f6e340]: 54% OFF
+              - paragraph [ref=f6e341]: MRP ₹80,000.00
+            - img "Wishlist this product" [ref=f6e346]
+          - generic [ref=f6e348]:
+            - link "Samsung Tab S10+ 31.49 cm (12.4 inch) WiFi + 5G Tablet with S-Pen, 12 GB RAM, 256 GB, Gray, X826BA ₹1,10,599.00 38% OFF MRP ₹1,77,999.00" [ref=f6e349]:
+              - /url: /product/samsung-tab-s10-3149-cm-124-inch-wifi-5g-tablet-with-s-pen-12-gb-ram-256-gb-gray-x826ba-m1qhxz-8643324
+              - heading "Samsung Tab S10+ 31.49 cm (12.4 inch) WiFi + 5G Tablet with S-Pen, 12 GB RAM, 256 GB, Gray, X826BA" [level=5] [ref=f6e352]
+              - generic [ref=f6e353]:
+                - generic [ref=f6e354]: ₹1,10,599.00
+                - generic [ref=f6e355]: 38% OFF
+              - paragraph [ref=f6e356]: MRP ₹1,77,999.00
+            - img "Wishlist this product" [ref=f6e361]
+          - generic [ref=f6e363]:
+            - link "Moto Pad 60 Neo 27.94 cm (11 Inch) WiFi + 5G Tablet with Pen, 6 GB RAM, 128 GB, Pantone Bronze Green, ZAGW0006IN ₹27,999.00 53% OFF MRP ₹60,000.00" [ref=f6e364]:
+              - /url: /product/moto-pad-60-neo-2794-cm-11-inch-wifi-5g-tablet-with-pen-6-gb-ram-128-gb-pantone-bronze-green-zagw0006in-ms4gwo-10327668
+              - heading "Moto Pad 60 Neo 27.94 cm (11 Inch) WiFi + 5G Tablet with Pen, 6 GB RAM, 128 GB, Pantone Bronze Green, ZAGW0006IN" [level=5] [ref=f6e367]
+              - generic [ref=f6e368]:
+                - generic [ref=f6e369]: ₹27,999.00
+                - generic [ref=f6e370]: 53% OFF
+              - paragraph [ref=f6e371]: MRP ₹60,000.00
+            - group "Best price including applicable offers. Open breakdown from Offers link." [ref=f6e374]:
+              - paragraph [ref=f6e377]:
+                - generic "₹26,599.00" [ref=f6e378]:
+                  - generic [aria-hidden] [ref=f6e379]: ₹
+                  - generic [aria-hidden] [ref=f6e380]: "2"
+                  - generic [aria-hidden] [ref=f6e381]: "7"
+                  - generic [aria-hidden] [ref=f6e382]: ","
+                  - generic [aria-hidden] [ref=f6e383]: "9"
+                  - generic [aria-hidden] [ref=f6e384]: "9"
+                  - generic [aria-hidden] [ref=f6e385]: "9"
+                  - generic [aria-hidden] [ref=f6e386]: .
+                  - generic [aria-hidden] [ref=f6e387]: "0"
+                  - generic [aria-hidden] [ref=f6e388]: "0"
+                - generic [ref=f6e389]:
+                  - text: with all applicable
+                  - button "View best price breakdown" [ref=f6e390]: Offers
+            - img "Wishlist this product" [ref=f6e395]
+          - generic [ref=f6e397]:
+            - link "Lenovo Idea Tab 27.94 cm (11 inch) WiFi + 5G Tablet with Pen, 256 GB, 8 GB RAM, Grey, ZAFM0706IN ₹29,999.00 30% OFF MRP ₹43,000.00" [ref=f6e398]:
+              - /url: /product/lenovo-idea-tab-2794-cm-11-inch-wifi-5g-tablet-with-pen-256-gb-8-gb-ram-grey-zafm0706in-mebctn-9336601
+              - heading "Lenovo Idea Tab 27.94 cm (11 inch) WiFi + 5G Tablet with Pen, 256 GB, 8 GB RAM, Grey, ZAFM0706IN" [level=5] [ref=f6e401]
+              - generic [ref=f6e402]:
+                - generic [ref=f6e403]: ₹29,999.00
+                - generic [ref=f6e404]: 30% OFF
+              - paragraph [ref=f6e405]: MRP ₹43,000.00
+            - img "Wishlist this product" [ref=f6e410]
+          - generic [ref=f6e412]:
+            - link "Moto Pad 60 Neo 27.94 cm (11 Inch) WiFi + 5G Tablet with Pen, 8 GB RAM, 128 GB, Pantone Bronze Green, ZAGW0005IN ₹29,999.00 50% OFF MRP ₹60,000.00" [ref=f6e413]:
+              - /url: /product/moto-pad-60-neo-2794-cm-11-inch-wifi-5g-tablet-with-pen-8-gb-ram-128-gb-pantone-bronze-green-zagw0005in-ms4gwm-10327649
+              - heading "Moto Pad 60 Neo 27.94 cm (11 Inch) WiFi + 5G Tablet with Pen, 8 GB RAM, 128 GB, Pantone Bronze Green, ZAGW0005IN" [level=5] [ref=f6e416]
+              - generic [ref=f6e417]:
+                - generic [ref=f6e418]: ₹29,999.00
+                - generic [ref=f6e419]: 50% OFF
+              - paragraph [ref=f6e420]: MRP ₹60,000.00
+            - group "Best price including applicable offers. Open breakdown from Offers link." [ref=f6e423]:
+              - paragraph [ref=f6e426]:
+                - generic "₹28,499.00" [ref=f6e427]:
+                  - generic [aria-hidden] [ref=f6e428]: ₹
+                  - generic [aria-hidden] [ref=f6e429]: "2"
+                  - generic [aria-hidden] [ref=f6e430]: "9"
+                  - generic [aria-hidden] [ref=f6e431]: ","
+                  - generic [aria-hidden] [ref=f6e432]: "9"
+                  - generic [aria-hidden] [ref=f6e433]: "9"
+                  - generic [aria-hidden] [ref=f6e434]: "9"
+                  - generic [aria-hidden] [ref=f6e435]: .
+                  - generic [aria-hidden] [ref=f6e436]: "0"
+                  - generic [aria-hidden] [ref=f6e437]: "0"
+                - generic [ref=f6e438]:
+                  - text: with all applicable
+                  - button "View best price breakdown" [ref=f6e439]: Offers
+            - img "Wishlist this product" [ref=f6e444]
+          - generic [ref=f6e446]:
+            - link "OnePlus Pad Go 2 30.73 cm (12.1 inch) 8 GB RAM, 256 GB, Shadow Black, Wi-Fi + 5G Tablet, OPD2505 ₹35,999.00" [ref=f6e447]:
+              - /url: /product/oneplus-pad-go-2-3073-cm-121-inch-12-gb-ram-256-gb-shadow-black-wi-fi-5g-tablet-opd2505-mjba97-9696537
+              - heading "OnePlus Pad Go 2 30.73 cm (12.1 inch) 8 GB RAM, 256 GB, Shadow Black, Wi-Fi + 5G Tablet, OPD2505" [level=5] [ref=f6e450]
+              - generic [ref=f6e451]: ₹35,999.00
+            - group "Best price including applicable offers. Open breakdown from Offers link." [ref=f6e455]:
+              - paragraph [ref=f6e458]:
+                - generic "₹35,998.00" [ref=f6e459]:
+                  - generic [aria-hidden] [ref=f6e460]: ₹
+                  - generic [aria-hidden] [ref=f6e461]: "3"
+                  - generic [aria-hidden] [ref=f6e462]: "5"
+                  - generic [aria-hidden] [ref=f6e463]: ","
+                  - generic [aria-hidden] [ref=f6e464]: "9"
+                  - generic [aria-hidden] [ref=f6e465]: "9"
+                  - generic [aria-hidden] [ref=f6e466]: "9"
+                  - generic [aria-hidden] [ref=f6e467]: .
+                  - generic [aria-hidden] [ref=f6e468]: "0"
+                  - generic [aria-hidden] [ref=f6e469]: "0"
+                - generic [ref=f6e470]:
+                  - text: with all applicable
+                  - button "View best price breakdown" [ref=f6e471]: Offers
+            - img "Wishlist this product" [ref=f6e476]
+          - generic [ref=f6e478]:
+            - link "Redmi Pad 2 Pro 30.73 cm (12.1 inch) Wi-Fi + 5G Tablet, 8 GB RAM, 128 GB, Quick Silver, 71156 ₹29,999.00 32% OFF MRP ₹43,999.00" [ref=f6e479]:
+              - /url: /product/redmi-pad-2-pro-3073-cm-121-inch-wi-fi-5g-tablet-8-gb-ram-128-gb-quick-silver-71156-mk5fr0-9716709
+              - heading "Redmi Pad 2 Pro 30.73 cm (12.1 inch) Wi-Fi + 5G Tablet, 8 GB RAM, 128 GB, Quick Silver, 71156" [level=5] [ref=f6e482]
+              - generic [ref=f6e483]:
+                - generic [ref=f6e484]: ₹29,999.00
+                - generic [ref=f6e485]: 32% OFF
+              - paragraph [ref=f6e486]: MRP ₹43,999.00
+            - group "Best price including applicable offers. Open breakdown from Offers link." [ref=f6e489]:
+              - paragraph [ref=f6e492]:
+                - generic "₹27,749.00" [ref=f6e493]:
+                  - generic [aria-hidden] [ref=f6e494]: ₹
+                  - generic [aria-hidden] [ref=f6e495]: "2"
+                  - generic [aria-hidden] [ref=f6e496]: "9"
+                  - generic [aria-hidden] [ref=f6e497]: ","
+                  - generic [aria-hidden] [ref=f6e498]: "9"
+                  - generic [aria-hidden] [ref=f6e499]: "9"
+                  - generic [aria-hidden] [ref=f6e500]: "9"
+                  - generic [aria-hidden] [ref=f6e501]: .
+                  - generic [aria-hidden] [ref=f6e502]: "0"
+                  - generic [aria-hidden] [ref=f6e503]: "0"
+                - generic [ref=f6e504]:
+                  - text: with all applicable
+                  - button "View best price breakdown" [ref=f6e505]: Offers
+            - img "Wishlist this product" [ref=f6e510]
+      - generic [ref=f6e514]:
+        - generic [ref=f6e515]:
+          - generic [ref=f6e516]:
+            - generic "Top Selling Wi-Fi Tablets" [ref=f6e517]
+            - generic [ref=f6e518]: No Cost EMI Available
+          - link "View all" [ref=f6e519] [cursor=pointer]:
+            - /url: /collection/wi-fi-tablets/?is_available=true
+            - generic [ref=f6e520]: View All
+        - generic [ref=f6e526] [cursor=pointer]:
+          - generic [ref=f6e527]:
+            - link "Moto Pad 70 Pro 32.25 cm (12.7 Inch) WiFi Tablet with Pen & Keyboard, 8 GB RAM, 256 GB, Pantone Titan, ZAJ70005IN ₹51,999.00 46% OFF MRP ₹97,000.00" [active] [ref=f6e528]:
+              - /url: /product/moto-pad-70-pro-3225-cm-127-inch-wifi-tablet-with-pen-keyboard-8-gb-ram-256-gb-pantone-titan-zaj70005in-ms4gwm-10327653
+              - heading "Moto Pad 70 Pro 32.25 cm (12.7 Inch) WiFi Tablet with Pen & Keyboard, 8 GB RAM, 256 GB, Pantone Titan, ZAJ70005IN" [level=5] [ref=f6e531]
+              - generic [ref=f6e532]:
+                - generic [ref=f6e533]: ₹51,999.00
+                - generic [ref=f6e534]: 46% OFF
+              - paragraph [ref=f6e535]: MRP ₹97,000.00
+            - group "Best price including applicable offers. Open breakdown from Offers link." [ref=f6e538]:
+              - paragraph [ref=f6e541]:
+                - generic "₹50,199.00" [ref=f6e542]:
+                  - generic [aria-hidden] [ref=f6e543]: ₹50,199.00
+                - generic [ref=f6e544]:
+                  - text: with all applicable
+                  - button "View best price breakdown" [ref=f6e545]: Offers
+            - img "Wishlist this product" [ref=f6e550]
+          - generic [ref=f6e552]:
+            - link "Asus Pad 30.98 cm (12.2 inch) Wi-Fi Tablet, 256 GB, 8 GB RAM, Pure White, T3201M5A-TL005DW ₹38,990.00 44% OFF MRP ₹69,990.00" [ref=f6e553]:
+              - /url: /product/asus-pad-3098-cm-122-inch-wi-fi-tablet-256-gb-8-gb-ram-pure-white-t3201m5a-tl005dw-ms7cvr-10332166
+              - heading "Asus Pad 30.98 cm (12.2 inch) Wi-Fi Tablet, 256 GB, 8 GB RAM, Pure White, T3201M5A-TL005DW" [level=5] [ref=f6e556]
+              - generic [ref=f6e557]:
+                - generic [ref=f6e558]: ₹38,990.00
+                - generic [ref=f6e559]: 44% OFF
+              - paragraph [ref=f6e560]: MRP ₹69,990.00
+            - group "Best price including applicable offers. Open breakdown from Offers link." [ref=f6e563]:
+              - paragraph [ref=f6e566]:
+                - generic "₹36,066.00" [ref=f6e567]:
+                  - generic [aria-hidden] [ref=f6e568]: ₹36,066.00
+                - generic [ref=f6e569]:
+                  - text: with all applicable
+                  - button "View best price breakdown" [ref=f6e570]: Offers
+            - img "Wishlist this product" [ref=f6e575]
+          - generic [ref=f6e577]:
+            - link "Samsung Galaxy Tab S10 Lite 27.70 cm (10.9 Inch) Wi-Fi Tablet with S-Pen, 6 GB RAM, 128 GB, Silver, SM-X400NZSAINU ₹33,999.00 41% OFF MRP ₹57,999.00" [ref=f6e578]:
+              - /url: /product/samsung-galaxy-tab-s10-lite-2770-cm-109-inch-wi-fi-tablet-with-s-pen-6-gb-ram-128-gb-silver-sm-x400nzsainu-mfgppl-9415896
+              - heading "Samsung Galaxy Tab S10 Lite 27.70 cm (10.9 Inch) Wi-Fi Tablet with S-Pen, 6 GB RAM, 128 GB, Silver, SM-X400NZSAINU" [level=5] [ref=f6e581]
+              - generic [ref=f6e582]:
+                - generic [ref=f6e583]: ₹33,999.00
+                - generic [ref=f6e584]: 41% OFF
+              - paragraph [ref=f6e585]: MRP ₹57,999.00
+            - group "Best price including applicable offers. Open breakdown from Offers link." [ref=f6e588]:
+              - paragraph [ref=f6e591]:
+                - generic "₹28,499.00" [ref=f6e592]:
+                  - generic [aria-hidden] [ref=f6e593]: ₹28,499.00
+                - generic [ref=f6e594]:
+                  - text: with all applicable
+                  - button "View best price breakdown" [ref=f6e595]: Offers
+            - img "Wishlist this product" [ref=f6e600]
+          - generic [ref=f6e602]:
+            - link "Moto Pad 70 Groove 32.25 cm (12.7 Inch) WiFi Tablet with Clear Case, 8 GB RAM, 256 GB, Pantone Blue Surf, ZAJ80000IN ₹38,999.00 51% OFF MRP ₹80,000.00" [ref=f6e603]:
+              - /url: /product/moto-pad-70-groove-3225-cm-127-inch-wifi-tablet-with-clear-case-8-gb-ram-256-gb-pantone-blue-surf-zaj80000in-ms4gwm-10327650
+              - heading "Moto Pad 70 Groove 32.25 cm (12.7 Inch) WiFi Tablet with Clear Case, 8 GB RAM, 256 GB, Pantone Blue Surf, ZAJ80000IN" [level=5] [ref=f6e606]
+              - generic [ref=f6e607]:
+                - generic [ref=f6e608]: ₹38,999.00
+                - generic [ref=f6e609]: 51% OFF
+              - paragraph [ref=f6e610]: MRP ₹80,000.00
+            - img "Wishlist this product" [ref=f6e615]
+          - generic [ref=f6e617]:
+            - link "Lenovo Idea Tab Pro 32.25 cm (12.7 inch) WiFi Tablet with Pen, 256 GB, 12 GB RAM, Luna Grey, ZAE40195IN ₹34,999.00 29% OFF MRP ₹48,999.00 star-half (12)" [ref=f6e618]:
+              - /url: /product/lenovo-idea-tab-pro-3225-cm-127-inch-wifi-tablet-with-pen-256-gb-12-gb-ram-luna-grey-zae40195in-m8n63r-9021109
+              - heading "Lenovo Idea Tab Pro 32.25 cm (12.7 inch) WiFi Tablet with Pen, 256 GB, 12 GB RAM, Luna Grey, ZAE40195IN" [level=5] [ref=f6e621]
+              - generic [ref=f6e622]:
+                - generic [ref=f6e623]: ₹34,999.00
+                - generic [ref=f6e624]: 29% OFF
+              - paragraph [ref=f6e625]: MRP ₹48,999.00
+              - generic [ref=f6e630]:
+                - list [ref=f6e631]:
+                  - listitem [ref=f6e632]
+                  - listitem [ref=f6e635]
+                  - listitem [ref=f6e638]
+                  - listitem [ref=f6e641]:
+                    - img "star-half" [ref=f6e643]
+                  - listitem [ref=f6e644]
+                - generic [ref=f6e647]: (12)
+            - group "Best price including applicable offers. Open breakdown from Offers link." [ref=f6e650]:
+              - paragraph [ref=f6e653]:
+                - generic "₹33,249.00" [ref=f6e654]:
+                  - generic [aria-hidden] [ref=f6e655]: ₹33,249.00
+                - generic [ref=f6e656]:
+                  - text: with all applicable
+                  - button "View best price breakdown" [ref=f6e657]: Offers
+            - img "Wishlist this product" [ref=f6e662]
+          - generic [ref=f6e664]:
+            - link "Asus Pad 30.98 cm (12.2 inch) Wi-Fi Tablet, 128 GB, 8 GB RAM, Pure White, T3201M5A-TL004DW ₹35,990.00 43% OFF MRP ₹62,990.00" [ref=f6e665]:
+              - /url: /product/asus-pad-3098-cm-122-inch-wi-fi-tablet-128-gb-8-gb-ram-pure-white-t3201m5a-tl004dw-ms7cvr-10332165
+              - heading "Asus Pad 30.98 cm (12.2 inch) Wi-Fi Tablet, 128 GB, 8 GB RAM, Pure White, T3201M5A-TL004DW" [level=5] [ref=f6e668]
+              - generic [ref=f6e669]:
+                - generic [ref=f6e670]: ₹35,990.00
+                - generic [ref=f6e671]: 43% OFF
+              - paragraph [ref=f6e672]: MRP ₹62,990.00
+            - img "Wishlist this product" [ref=f6e677]
+          - generic [ref=f6e679]:
+            - link "Samsung Galaxy Tab S10 Lite 27.70 cm (10.9 Inch) Wi-Fi Tablet with S-Pen, 6 GB RAM, 128 GB, Red, SM-X400NZRAINU ₹33,999.00 41% OFF MRP ₹57,999.00" [ref=f6e680]:
+              - /url: /product/samsung-galaxy-tab-s10-lite-2770-cm-109-inch-wi-fi-tablet-with-s-pen-6-gb-ram-128-gb-red-sm-x400nzrainu-mfgppi-9415887
+              - heading "Samsung Galaxy Tab S10 Lite 27.70 cm (10.9 Inch) Wi-Fi Tablet with S-Pen, 6 GB RAM, 128 GB, Red, SM-X400NZRAINU" [level=5] [ref=f6e683]
+              - generic [ref=f6e684]:
+                - generic [ref=f6e685]: ₹33,999.00
+                - generic [ref=f6e686]: 41% OFF
+              - paragraph [ref=f6e687]: MRP ₹57,999.00
+            - group "Best price including applicable offers. Open breakdown from Offers link." [ref=f6e690]:
+              - paragraph [ref=f6e693]:
+                - generic "₹28,499.00" [ref=f6e694]:
+                  - generic [aria-hidden] [ref=f6e695]: ₹
+                  - generic [aria-hidden] [ref=f6e696]: "3"
+                  - generic [aria-hidden] [ref=f6e697]: "3"
+                  - generic [aria-hidden] [ref=f6e698]: ","
+                  - generic [aria-hidden] [ref=f6e699]: "9"
+                  - generic [aria-hidden] [ref=f6e700]: "9"
+                  - generic [aria-hidden] [ref=f6e701]: "9"
+                  - generic [aria-hidden] [ref=f6e702]: .
+                  - generic [aria-hidden] [ref=f6e703]: "0"
+                  - generic [aria-hidden] [ref=f6e704]: "0"
+                - generic [ref=f6e705]:
+                  - text: with all applicable
+                  - button "View best price breakdown" [ref=f6e706]: Offers
+            - img "Wishlist this product" [ref=f6e711]
+          - generic [ref=f6e713]:
+            - link "Samsung Galaxy Tab S10 Lite 27.70 cm (10.9 Inch) Wi-Fi Tablet with S-Pen, 6 GB RAM, 128 GB, Gray, SM-X400NZAAINU ₹33,999.00 41% OFF MRP ₹57,999.00" [ref=f6e714]:
+              - /url: /product/samsung-galaxy-tab-s10-lite-2770-cm-109-inch-wi-fi-tablet-with-s-pen-6-gb-ram-128-gb-gray-sm-x400nzaainu-mfgppl-9415894
+              - heading "Samsung Galaxy Tab S10 Lite 27.70 cm (10.9 Inch) Wi-Fi Tablet with S-Pen, 6 GB RAM, 128 GB, Gray, SM-X400NZAAINU" [level=5] [ref=f6e717]
+              - generic [ref=f6e718]:
+                - generic [ref=f6e719]: ₹33,999.00
+                - generic [ref=f6e720]: 41% OFF
+              - paragraph [ref=f6e721]: MRP ₹57,999.00
+            - group "Best price including applicable offers. Open breakdown from Offers link." [ref=f6e724]:
+              - paragraph [ref=f6e727]:
+                - generic "₹28,499.00" [ref=f6e728]:
+                  - generic [aria-hidden] [ref=f6e729]: ₹
+                  - generic [aria-hidden] [ref=f6e730]: "3"
+                  - generic [aria-hidden] [ref=f6e731]: "3"
+                  - generic [aria-hidden] [ref=f6e732]: ","
+                  - generic [aria-hidden] [ref=f6e733]: "9"
+                  - generic [aria-hidden] [ref=f6e734]: "9"
+                  - generic [aria-hidden] [ref=f6e735]: "9"
+                  - generic [aria-hidden] [ref=f6e736]: .
+                  - generic [aria-hidden] [ref=f6e737]: "0"
+                  - generic [aria-hidden] [ref=f6e738]: "0"
+                - generic [ref=f6e739]:
+                  - text: with all applicable
+                  - button "View best price breakdown" [ref=f6e740]: Offers
+            - img "Wishlist this product" [ref=f6e745]
+          - generic [ref=f6e747]:
+            - link "OnePlus Pad Go 2 30.73 cm (12.1 inch) 8 GB RAM, 128 GB, Shadow Black, Wi-Fi Tablet, OPD2504 ₹29,999.00" [ref=f6e748]:
+              - /url: /product/oneplus-pad-go-2-3073-cm-121-inch-8-gb-ram-128-gb-shadow-black-wi-fi-tablet-opd2504-mjba96-9696540
+              - heading "OnePlus Pad Go 2 30.73 cm (12.1 inch) 8 GB RAM, 128 GB, Shadow Black, Wi-Fi Tablet, OPD2504" [level=5] [ref=f6e751]
+              - generic [ref=f6e752]: ₹29,999.00
+            - group "Best price including applicable offers. Open breakdown from Offers link." [ref=f6e756]:
+              - paragraph [ref=f6e759]:
+                - generic "₹29,998.00" [ref=f6e760]:
+                  - generic [aria-hidden] [ref=f6e761]: ₹
+                  - generic [aria-hidden] [ref=f6e762]: "2"
+                  - generic [aria-hidden] [ref=f6e763]: "9"
+                  - generic [aria-hidden] [ref=f6e764]: ","
+                  - generic [aria-hidden] [ref=f6e765]: "9"
+                  - generic [aria-hidden] [ref=f6e766]: "9"
+                  - generic [aria-hidden] [ref=f6e767]: "9"
+                  - generic [aria-hidden] [ref=f6e768]: .
+                  - generic [aria-hidden] [ref=f6e769]: "0"
+                  - generic [aria-hidden] [ref=f6e770]: "0"
+                - generic [ref=f6e771]:
+                  - text: with all applicable
+                  - button "View best price breakdown" [ref=f6e772]: Offers
+            - img "Wishlist this product" [ref=f6e777]
+          - generic [ref=f6e779]:
+            - link "Moto Pad 60 Neo 27.94 cm (11 Inch) WiFi Tablet with Pen, 8 GB RAM, 128 GB, Pantone Malibu Blue, ZAGV0014IN ₹26,999.00 46% OFF MRP ₹50,000.00" [ref=f6e780]:
+              - /url: /product/moto-pad-60-neo-2794-cm-11-inch-wifi-tablet-with-pen-8-gb-ram-128-gb-pantone-malibu-blue-zagv0014in-ms4gwo-10327669
+              - heading "Moto Pad 60 Neo 27.94 cm (11 Inch) WiFi Tablet with Pen, 8 GB RAM, 128 GB, Pantone Malibu Blue, ZAGV0014IN" [level=5] [ref=f6e783]
+              - generic [ref=f6e784]:
+                - generic [ref=f6e785]: ₹26,999.00
+                - generic [ref=f6e786]: 46% OFF
+              - paragraph [ref=f6e787]: MRP ₹50,000.00
+            - group "Best price including applicable offers. Open breakdown from Offers link." [ref=f6e790]:
+              - paragraph [ref=f6e793]:
+                - generic "₹25,649.00" [ref=f6e794]:
+                  - generic [aria-hidden] [ref=f6e795]: ₹
+                  - generic [aria-hidden] [ref=f6e796]: "2"
+                  - generic [aria-hidden] [ref=f6e797]: "6"
+                  - generic [aria-hidden] [ref=f6e798]: ","
+                  - generic [aria-hidden] [ref=f6e799]: "9"
+                  - generic [aria-hidden] [ref=f6e800]: "9"
+                  - generic [aria-hidden] [ref=f6e801]: "9"
+                  - generic [aria-hidden] [ref=f6e802]: .
+                  - generic [aria-hidden] [ref=f6e803]: "0"
+                  - generic [aria-hidden] [ref=f6e804]: "0"
+                - generic [ref=f6e805]:
+                  - text: with all applicable
+                  - button "View best price breakdown" [ref=f6e806]: Offers
+            - img "Wishlist this product" [ref=f6e811]
+      - generic [ref=f6e815]:
+        - generic [ref=f6e816]:
+          - generic "Tablet Accessories" [ref=f6e818]
+          - link "View all" [ref=f6e819] [cursor=pointer]:
+            - /url: /collection/tablet-accessories/?is_available=true
+            - generic [ref=f6e820]: View All
+        - generic [ref=f6e826] [cursor=pointer]:
+          - generic [ref=f6e827]:
+            - link "SanDisk 2 TB E61 Extreme Portable External SSD, Black ₹33,999.00 21% OFF MRP ₹42,800.00" [ref=f6e828]:
+              - /url: /product/sandisk-2-tb-e61-extreme-portable-external-ssd-black-m981l1-9053677
+              - heading "SanDisk 2 TB E61 Extreme Portable External SSD, Black" [level=5] [ref=f6e831]
+              - generic [ref=f6e832]:
+                - generic [ref=f6e833]: ₹33,999.00
+                - generic [ref=f6e834]: 21% OFF
+              - paragraph [ref=f6e835]: MRP ₹42,800.00
+            - img "Wishlist this product" [ref=f6e840]
+          - generic [ref=f6e842]:
+            - link "SanDisk Ultra Dual Drive Go Pen Drive, USB Type-C, 256 GB, 400 MB/sec, Black ₹4,539.00 66% OFF MRP ₹13,300.00" [ref=f6e843]:
+              - /url: /product/sandisk-ultra-dual-drive-go-pen-drive-usb-type-c-256-gb-400-mbsec-black-m7ec1i-8894144
+              - heading "SanDisk Ultra Dual Drive Go Pen Drive, USB Type-C, 256 GB, 400 MB/sec, Black" [level=5] [ref=f6e846]
+              - generic [ref=f6e847]:
+                - generic [ref=f6e848]: ₹4,539.00
+                - generic [ref=f6e849]: 66% OFF
+              - paragraph [ref=f6e850]: MRP ₹13,300.00
+            - img "Wishlist this product" [ref=f6e855]
+          - generic [ref=f6e857]:
+            - link "SanDisk Ultra Dual Drive Go Pen Drive, USB Type-C, 128 GB, 400 MB/sec, Black ₹2,039.00 72% OFF MRP ₹7,300.00" [ref=f6e858]:
+              - /url: /product/sandisk-ultra-dual-drive-go-pen-drive-usb-type-c-128-gb-400-mbsec-black-m7ec1i-8894145
+              - heading "SanDisk Ultra Dual Drive Go Pen Drive, USB Type-C, 128 GB, 400 MB/sec, Black" [level=5] [ref=f6e861]
+              - generic [ref=f6e862]:
+                - generic [ref=f6e863]: ₹2,039.00
+                - generic [ref=f6e864]: 72% OFF
+              - paragraph [ref=f6e865]: MRP ₹7,300.00
+            - img "Wishlist this product" [ref=f6e870]
+          - generic [ref=f6e872]:
+            - link "SanDisk Mobile Pen Drive Luxe 128 GB, USB Type A & USB C Connector, Up to 400 MB/sec, Silver ₹2,629.00 66% OFF MRP ₹7,800.00" [ref=f6e873]:
+              - /url: /product/sandisk-mobile-pen-drive-luxe-128-gb-usb-type-a-and-usb-c-connector-up-to-400-mbsec-silver-m7kenv-8945165
+              - heading "SanDisk Mobile Pen Drive Luxe 128 GB, USB Type A & USB C Connector, Up to 400 MB/sec, Silver" [level=5] [ref=f6e876]
+              - generic [ref=f6e877]:
+                - generic [ref=f6e878]: ₹2,629.00
+                - generic [ref=f6e879]: 66% OFF
+              - paragraph [ref=f6e880]: MRP ₹7,800.00
+            - img "Wishlist this product" [ref=f6e885]
+          - generic [ref=f6e887]:
+            - link "SanDisk Ultra Dual Drive Go Pen Drive, USB Type-C, 64 GB, 300 MB/sec, Black ₹1,329.00 73% OFF MRP ₹5,000.00" [ref=f6e888]:
+              - /url: /product/sandisk-ultra-dual-drive-go-pen-drive-usb-type-c-64-gb-300-mbsec-black-m7ec1i-8894147
+              - heading "SanDisk Ultra Dual Drive Go Pen Drive, USB Type-C, 64 GB, 300 MB/sec, Black" [level=5] [ref=f6e891]
+              - generic [ref=f6e892]:
+                - generic [ref=f6e893]: ₹1,329.00
+                - generic [ref=f6e894]: 73% OFF
+              - paragraph [ref=f6e895]: MRP ₹5,000.00
+            - img "Wishlist this product" [ref=f6e900]
+          - generic [ref=f6e902]:
+            - link "HP 64GB MicroSD Memory Card SDXC mi310 Class 10, UHS-I, U1 Card, Upto 140MB/s R, 10 Y Warranty ₹1,299.00 55% OFF MRP ₹2,900.00 star-half (72)" [ref=f6e903]:
+              - /url: /product/hp-64-gb-u1-high-speed-microsd-card-u1-tf-card-64gb
+              - heading "HP 64GB MicroSD Memory Card SDXC mi310 Class 10, UHS-I, U1 Card, Upto 140MB/s R, 10 Y Warranty" [level=5] [ref=f6e906]
+              - generic [ref=f6e907]:
+                - generic [ref=f6e908]: ₹1,299.00
+                - generic [ref=f6e909]: 55% OFF
+              - paragraph [ref=f6e910]: MRP ₹2,900.00
+              - generic [ref=f6e915]:
+                - list [ref=f6e916]:
+                  - listitem [ref=f6e917]
+                  - listitem [ref=f6e920]
+                  - listitem [ref=f6e923]
+                  - listitem [ref=f6e926]:
+                    - img "star-half" [ref=f6e928]
+                  - listitem [ref=f6e929]
+                - generic [ref=f6e932]: (72)
+            - img "Wishlist this product" [ref=f6e937]
+          - generic [ref=f6e939]:
+            - link "Apple USB-C-ZML Pencil For iPad Pro 32.76 cm (12.9 inch), iPad Pro 27.94 cm (11 inch), iPad Air, iPad and iPad Mini, MUWA3ZM/A, White ₹7,900.00 (25)" [ref=f6e940]:
+              - /url: /product/apple-usb-c-zml-pencil-for-ipad-pro-3276-cm-129-inch-ipad-pro-2794-cm-11-inch-ipad-air-ipad-and-ipad-mini-muwa3zma-white-lv5a4a-7563069
+              - heading "Apple USB-C-ZML Pencil For iPad Pro 32.76 cm (12.9 inch), iPad Pro 27.94 cm (11 inch), iPad Air, iPad and iPad Mini, MUWA3ZM/A, White" [level=5] [ref=f6e943]
+              - generic [ref=f6e944]: ₹7,900.00
+              - generic [ref=f6e950]:
+                - list [ref=f6e951]:
+                  - listitem [ref=f6e952]
+                  - listitem [ref=f6e955]
+                  - listitem [ref=f6e958]
+                  - listitem [ref=f6e961]
+                  - listitem [ref=f6e964]
+                - generic [ref=f6e967]: (25)
+            - img "Wishlist this product" [ref=f6e972]
+          - generic [ref=f6e974]:
+            - link "SanDisk Ultra Dual Drive Go Pen Drive, USB Type-C, 512 GB, 400 MB/sec, Black ₹15,009.00" [ref=f6e975]:
+              - /url: /product/sandisk-ultra-dual-drive-go-pen-drive-usb-type-c-512-gb-400-mbsec-black-m7ec1h-8894143
+              - heading "SanDisk Ultra Dual Drive Go Pen Drive, USB Type-C, 512 GB, 400 MB/sec, Black" [level=5] [ref=f6e978]
+              - generic [ref=f6e979]: ₹15,009.00
+            - img "Wishlist this product" [ref=f6e985]
+          - generic [ref=f6e987]:
+            - link "Samsung T7 1TB External Solid State Drive (Portable SSD), Grey ₹24,799.00 37% OFF MRP ₹39,199.00" [ref=f6e988]:
+              - /url: /product/samsung-1-tb-t7-portable-ssd-hard-disk-drive-hdd-lauvr2
+              - heading "Samsung T7 1TB External Solid State Drive (Portable SSD), Grey" [level=5] [ref=f6e991]
+              - generic [ref=f6e992]:
+                - generic [ref=f6e993]: ₹24,799.00
+                - generic [ref=f6e994]: 37% OFF
+              - paragraph [ref=f6e995]: MRP ₹39,199.00
+            - img "Wishlist this product" [ref=f6e1000]
+          - generic [ref=f6e1002]:
+            - link "Lexar 64 GB JumpDrive Dual Drive D400 USB 3.1 Type-C Pen Drive ₹1,299.00 38% OFF MRP ₹2,100.00" [ref=f6e1003]:
+              - /url: /product/lexar-64-gb-jumpdrive-dual-drive-d400-usb-31-type-c-pen-drive-m91ct9-9052312
+              - heading "Lexar 64 GB JumpDrive Dual Drive D400 USB 3.1 Type-C Pen Drive" [level=5] [ref=f6e1006]
+              - generic [ref=f6e1007]:
+                - generic [ref=f6e1008]: ₹1,299.00
+                - generic [ref=f6e1009]: 38% OFF
+              - paragraph [ref=f6e1010]: MRP ₹2,100.00
+            - img "Wishlist this product" [ref=f6e1015]
+      - generic [ref=f6e1019]:
+        - generic "Learn & Explore" [ref=f6e1022]
+        - generic [ref=f6e1025]:
+          - link "goto banner" [ref=f6e1026] [cursor=pointer]:
+            - /url: /c/resource-center/bg/ipad-buying-guide-accessories
+            - img "banner" [ref=f6e1027]
+          - link "goto banner" [ref=f6e1028] [cursor=pointer]:
+            - /url: /c/resource-center/bg/best-tablets-for-streaming-entertainment
+            - img "banner" [ref=f6e1029]
+          - link "goto banner" [ref=f6e1030] [cursor=pointer]:
+            - /url: /c/resource-center/bg/which-is-better-tablet-or-laptop
+            - img "banner" [ref=f6e1031]
+          - link "goto banner" [ref=f6e1032] [cursor=pointer]:
+            - /url: /c/resource-center/bg/best-students-tablets-india-guide
+            - img "banner" [ref=f6e1033]
+      - generic [ref=f6e1036]:
+        - heading [level=2] [ref=f6e1037]:
+          - strong [ref=f6e1038]: "Choose the Best Tablets Online: Compare Prices, Specs, and Top Brands"
+        - paragraph [ref=f6e1039]:
+          - text: Whether you're after a powerhouse tablet PC for work, something lightweight for binge-watching, or a smart pick for your kids, the right tablet genuinely transforms how you use technology every day. At
+          - link "Reliance Digital" [ref=f6e1040] [cursor=pointer]:
+            - /url: https://www.reliancedigital.in/
+          - text: ", you'll find an impressive range of tablets from"
+          - link "Apple" [ref=f6e1041] [cursor=pointer]:
+            - /url: https://www.reliancedigital.in/sections/buy-ipad
+          - text: ","
+          - link "Samsung" [ref=f6e1042] [cursor=pointer]:
+            - /url: https://www.reliancedigital.in/collection/samsung-tablets
+          - text: ","
+          - link "Lenovo" [ref=f6e1043] [cursor=pointer]:
+            - /url: https://www.reliancedigital.in/sections/lenovo-tablets
+          - text: ", and more, all in one place, with verified prices and genuine warranties."
+        - paragraph [ref=f6e1044]:
+          - strong [ref=f6e1045]: Your daily dose of updates on our
+          - link [ref=f6e1046] [cursor=pointer]:
+            - /url: https://whatsapp.com/channel/0029VbC12fI2v1IrcGyHfq3Z
+            - strong [ref=f6e1047]: WhatsApp channel
+          - strong [ref=f6e1048]: .
+        - paragraph [ref=f6e1049]:
+          - text: From the premium
+          - link "Apple iPad Pro M5" [ref=f6e1050] [cursor=pointer]:
+            - /url: https://www.reliancedigital.in/collection/apple-ipad-pro-m5
+          - text: (13-inch, 2025) with the ultra-sharp Nano-Texture Glass display, all the way down to budget-friendly picks you can grab as a tablet under 10000, there's genuinely something for every kind of buyer. The
+          - link "Samsung Galaxy Tab A9+" [ref=f6e1051] [cursor=pointer]:
+            - /url: https://www.reliancedigital.in/product/samsung-galaxy-2794-cm-110-inch-wi-fi-cellular-tablet-128-gb-8-gb-gray-tab-a9x216be2023-lnu0gp-7534503
+          - text: (Wi-Fi + 5G, 8 GB RAM, 128 GB) sits nicely in the mid-range at Rs. 26,999, making it a brilliant shout for anyone hunting the best tablet under 30000 bracket.
+        - paragraph [ref=f6e1052]:
+          - text: And if you've got a slightly bigger budget, the
+          - link "Lenovo Yoga Tab Plus" [ref=f6e1053] [cursor=pointer]:
+            - /url: https://www.reliancedigital.in/product/lenovo-yoga-tab-plus-3225-cm-127-inch-wifi-tablet-with-pen-and-keyboard-512-gb-16-gb-ram-tidal-teal-zaeg0048in-md8o5g-9291413
+          - text: with a stunning 12.7-inch display, 16 GB RAM, 512 GB storage, and a bundled pen and keyboard is one of the most versatile tablet PC options you'll come across under Rs. 60,000.
+        - paragraph [ref=f6e1054]:
+          - text: For those who want pure performance without compromise, the Apple iPad Pro M5 and
+          - link "iPad Air M4" [ref=f6e1055] [cursor=pointer]:
+            - /url: https://www.reliancedigital.in/product/apple-ipad-air-m4-2759-cm-11-inch-wi-fi-tablet-128-gb-starlight-2026-mh334hna-mmai6s-9967315
+          - text: "are in a league of their own: both powered by Apple Silicon and designed for creators, professionals, and anyone who's serious about what they do on a screen. They also double up beautifully as graphics or drawing tablets when paired with an Apple Pencil, making them a favourite amongst illustrators and designers."
+        - paragraph [ref=f6e1056]: Lenovo's Yoga Tab Plus similarly supports a stylus, making it a solid pen tablet option for creative work on Android.
+        - paragraph [ref=f6e1057]:
+          - strong [ref=f6e1058]: "Note:"
+          - text: Prices mentioned are subject to change without prior notice.
+        - heading [level=2] [ref=f6e1059]:
+          - strong [ref=f6e1060]: Which Tablet Brand Is Best for Daily Multi-Tasking and Long Battery Life?
+        - paragraph [ref=f6e1061]: Honestly, it depends on what your day looks like. Apple's iPads, especially the iPad Air M4 and iPad Pro M5, are absolutely unbeatable for smooth, stutter-free multitasking. The M4 and M5 chips are genuinely desktop-class processors tucked inside a slim tablet body.
+        - paragraph [ref=f6e1062]:
+          - text: That said,
+          - link "Samsung's Galaxy Tab S9 series" [ref=f6e1063] [cursor=pointer]:
+            - /url: https://www.reliancedigital.in/product/samsung-galaxy-tab-s9-2781-cm-11-inch-dynamic-amoled-2x-display-ram-8-gb-rom-128-gb-expandable-s-pen-in-box-wi-fi-tablet-grey-lkv9ii-7532836
+          - text: "and Lenovo's Idea Tab lineup perform significantly better than expected. Samsung's Exynos and Snapdragon-powered tabs handle split-screen multitasking really well, and the batteries on many of these models stretch well past a full day of real-world use: we're talking 10,000 mAh and beyond on several Lenovo and Samsung options."
+        - paragraph [ref=f6e1064]:
+          - text: If you need reliable battery life for long commutes or back-to-back video calls, the
+          - link "Lenovo Idea Tab 11-inch" [ref=f6e1065] [cursor=pointer]:
+            - /url: https://www.reliancedigital.in/product/lenovo-idea-tab-2794-cm-11-inch-wifi-tablet-256-gb-8-gb-ram-grey-zafr0900in-mebctb-9336580
+          - text: (8 GB RAM, 256 GB) at Rs. 20,999 is a seriously strong buy and easily qualifies as the best tablet under 30000 for everyday use.
+        - heading [level=2] [ref=f6e1066]:
+          - strong [ref=f6e1067]: What Should You Look for When Buying a Tablet for Work or Remote Learning?
+        - paragraph [ref=f6e1068]: Display quality and connectivity are always the top priority. A sharp, colour-accurate screen matters a lot when you're reading documents or attending video calls for hours. Look for at least a Full HD (1920×1200) resolution, and if you can stretch to a higher-refresh-rate panel, you'll notice the difference almost immediately.
+        - paragraph [ref=f6e1069]:
+          - text: "Next up:"
+          - link "keyboard" [ref=f6e1070] [cursor=pointer]:
+            - /url: https://www.reliancedigital.in/collection/keyboards
+          - text: "and stylus support. If you're a student or a professional working remotely, a best tablet for students should ideally support a detachable keyboard or a compatible folio case. The Lenovo Yoga Tab Plus comes with both a pen and keyboard out of the box: that's rare and genuinely useful. For tighter budgets, plenty of tablet options under 15000 from Xiaomi and Realme offer solid displays and expandable storage, making them a practical choice for students who mostly browse, take notes, and stream content."
+        - heading [level=2] [ref=f6e1071]:
+          - strong [ref=f6e1072]: How Much RAM and Storage Capacity Do You Actually Need in a Modern Tablet?
+        - paragraph [ref=f6e1073]: "This one's simpler than it sounds. For casual use: streaming, social media, light browsing), 4 GB RAM and 64 GB storage is fine. But the moment you start using productivity apps, video editing tools, or gaming, you'll want to look at 8 GB RAM minimum. Most of the well-reviewed best tablet options today ship with 8 GB or more, and that's for good reason."
+        - paragraph [ref=f6e1074]: Storage-wise, 128 GB is a comfortable starting point. If you're a creative who stores large files locally, aim for 256 GB or more, or pick a model with expandable storage via microSD. The best tablet under 25000 and best tablet computer picks in Reliance Digital's range (like the Samsung Tab A9+ and Lenovo Idea Tab) offer 8 GB RAM and 128-256 GB storage at an affordable price.
+        - heading [level=2] [ref=f6e1075]:
+          - strong [ref=f6e1076]: "Which Tablet OS Should You Pick: iPadOS, Android, or Fire OS for Your Workflow?"
+        - paragraph [ref=f6e1077]: Most of us choose a tablet based on screen size and price, only to later realise the software is what we live with every day. So start here.
+        - paragraph [ref=f6e1078]: If you've got an iPhone, iPadOS is the natural fit. Your photos show up on both devices, AirDrop sends a PDF across in seconds, and whatever you copy on your phone pastes straight onto the tablet. It's also a favourite among artists and video editors, since many creative apps land there first.
+        - paragraph [ref=f6e1079]: Android offers the most choice, from budget models for online classes to larger ones that handle office work. WhatsApp, Google Docs, your UPI app and JioHotstar all work just as you'd expect. The Lenovo Tab Plus Gen 2 (12.1-inch display, 8 GB RAM, 128 GB storage) runs two apps side by side without fuss, and that's what most people want from work tablets.
+        - paragraph [ref=f6e1080]: Fire OS is a bit different. It's built on Android but uses Amazon's own app store instead of Google Play, and it's designed for reading, watching shows, and keeping the kids entertained. If that's your plan, great. Just don't expect it to stand in for a laptop.
+        - paragraph [ref=f6e1081]: My advice? Stick with what your phone runs. Changing ecosystems is a bigger headache than it sounds.
+        - heading [level=2] [ref=f6e1082]:
+          - strong [ref=f6e1083]: What Screen Size and Refresh Rate Actually Matter for Reading, Gaming, and Video Calls?
+        - paragraph [ref=f6e1084]: Think about where you'll use it most. An 8-inch mini tablet is light enough to read in bed for an hour and slips into a sling bag for the metro. Most families land on 10 to 11 inches. Go for 12 inches or more only if you type a lot or keep two windows open all day.
+        - paragraph [ref=f6e1085]: Refresh rate is mainly a gaming thing. At 90Hz or 120Hz, fast games feel noticeably smoother. For reading or a work call, a regular 60Hz screen does the job, and you likely won't spot the difference.
+        - paragraph [ref=f6e1086]: If entertainment is your main reason for buying, don't worry too much about hertz. Look at the speakers instead. Four speakers will do more for a weekend movie than any number on the spec sheet.
+        - paragraph [ref=f6e1087]: For video calls, check where the front camera sits. If it's on the shorter edge, you'll end up glancing sideways whenever you prop the tablet up in landscape. On the longer edge, you look straight at the person you're talking to.
+        - paragraph [ref=f6e1088]: Many mid-range models now support a stylus, so one device can also be your notebook for quick notes and rough sketches. That's why parents often shortlist tablets with pen support for students. And if you plan to type a lot, keyboard bundles save you the hassle of hunting for a compatible case.
+        - heading [level=2] [ref=f6e1089]:
+          - strong [ref=f6e1090]: Should You Go Wi-Fi Only or 5G Enabled, and Do You Really Need a Rear Camera?
+        - paragraph [ref=f6e1091]: Honestly, Wi-Fi only is enough for most people. If the tablet lives at home or on your office desk, your phone's hotspot can handle the occasional trip.
+        - paragraph [ref=f6e1092]: Things change if you travel every week or work from client sites. A tablet with SIM support means you don't have to drain your phone battery just to stay online, and 5G tablets make uploading big files on the road much easier. The catch is that the cellular version usually costs a few thousand rupees more, so ask yourself how often you'd really use it.
+        - paragraph [ref=f6e1093]: The rear camera is mostly for scanning bills, documents or whatever's left on the whiteboard after a meeting. It doesn't have to be great. Put that money into more RAM or a better screen instead.
+        - paragraph [ref=f6e1094]: When you're ready to buy tablets online, check how many years of software updates the brand promises, whether a charger is included in the box (it isn't always), and what the warranty actually covers. Tablet prices in India also tend to dip around Diwali, so waiting a little can be worth it, especially if you're eyeing a pricier tablet.
+        - paragraph [ref=f6e1095]: At Reliance Digital, you can compare tablets online, browse the latest tablets and the best new tablets, and order a tablet online when you're ready. And remember, the latest tablet isn't always the most expensive one. It's the one that suits the way you'll actually use it.
+        - paragraph [ref=f6e1096]:
+          - text: And if your tablet ever runs into trouble, whether it's a software glitch, physical damage, or just needs a tune-up, Reliance Digital's
+          - link "resQ services" [ref=f6e1097] [cursor=pointer]:
+            - /url: https://www.reliancedigital.in/c/resQ-services
+          - text: have you covered with expert repairs and support right across India.
+    - generic [ref=f6e1103]:
+      - generic [ref=f6e1104]:
+        - generic [ref=f6e1105]:
+          - generic [ref=f6e1106]:
+            - generic [ref=f6e1107]: Product Categories
+            - generic [ref=f6e1108]:
+              - link "goto Smartphones" [ref=f6e1109] [cursor=pointer]:
+                - /url: https://www.reliancedigital.in/collection/mobiles/?internal_source=navigation
+                - text: Smartphones
+              - link "goto Laptops" [ref=f6e1110] [cursor=pointer]:
+                - /url: https://www.reliancedigital.in/collection/laptops
+                - text: Laptops
+              - link "goto DSLR Cameras" [ref=f6e1111] [cursor=pointer]:
+                - /url: https://www.reliancedigital.in/collection/dslr-cameras
+                - text: DSLR Cameras
+              - link "goto Televisions" [ref=f6e1112] [cursor=pointer]:
+                - /url: https://www.reliancedigital.in/sections/televisions
+                - text: Televisions
+              - link "goto Air Conditioners" [ref=f6e1113] [cursor=pointer]:
+                - /url: https://www.reliancedigital.in/collection/air-conditioners
+                - text: Air Conditioners
+              - link "goto Refrigerator":
+                - /url: undefined
+                - text: Refrigerator
+              - link "goto Kitchen Appliances" [ref=f6e1114] [cursor=pointer]:
+                - /url: https://www.reliancedigital.in/collection/kitchen-appliances
+                - text: Kitchen Appliances
+              - link "goto Accessories" [ref=f6e1115] [cursor=pointer]:
+                - /url: https://www.reliancedigital.in/collection/accessories
+                - text: Accessories
+              - link "goto Personal Care & Grooming" [ref=f6e1116] [cursor=pointer]:
+                - /url: https://www.reliancedigital.in/collection/personal-care-grooming
+                - text: Personal Care & Grooming
+          - generic [ref=f6e1117]:
+            - generic [ref=f6e1118]: Site Info
+            - generic [ref=f6e1119]:
+              - link "goto About Reliance Digital" [ref=f6e1120] [cursor=pointer]:
+                - /url: https://www.reliancedigital.in/c/about-reliance-digital
+                - text: About Reliance Digital
+              - link "goto resQ Services" [ref=f6e1121] [cursor=pointer]:
+                - /url: https://www.reliancedigital.in/c/resQ-services
+                - text: resQ Services
+              - link "goto Site Map" [ref=f6e1122] [cursor=pointer]:
+                - /url: https://www.reliancedigital.in/c/all-categories
+                - text: Site Map
+              - link "goto Gift Cards" [ref=f6e1123] [cursor=pointer]:
+                - /url: https://www.reliancedigital.in/c/gift-cards
+                - text: Gift Cards
+              - link "goto Corporate Enquiries" [ref=f6e1124] [cursor=pointer]:
+                - /url: https://www.reliancedigital.in/c/corporate-enquires
+                - text: Corporate Enquiries
+              - link "goto Contact Us" [ref=f6e1125] [cursor=pointer]:
+                - /url: https://www.reliancedigital.in/c/contact-us
+                - text: Contact Us
+          - generic [ref=f6e1126]:
+            - generic [ref=f6e1127]: Resource Center
+            - generic [ref=f6e1128]:
+              - link "goto Buying Guides" [ref=f6e1129] [cursor=pointer]:
+                - /url: https://www.reliancedigital.in/c/resource-center/buying-guides
+                - text: Buying Guides
+              - link "goto Manuals" [ref=f6e1130] [cursor=pointer]:
+                - /url: https://www.reliancedigital.in/c/resource-center/manuals
+                - text: Manuals
+              - link "goto How To's" [ref=f6e1131] [cursor=pointer]:
+                - /url: https://www.reliancedigital.in/c/resource-center/how-tos
+                - text: How To's
+              - link "goto Compare Products" [ref=f6e1132] [cursor=pointer]:
+                - /url: https://www.reliancedigital.in/c/resource-center/compare
+                - text: Compare Products
+              - link "goto Nearest Store" [ref=f6e1133] [cursor=pointer]:
+                - /url: https://www.reliancedigitalstores.in/
+                - text: Nearest Store
+          - generic [ref=f6e1134]:
+            - generic [ref=f6e1135]: Policies
+            - generic [ref=f6e1136]:
+              - link "goto Terms of Use" [ref=f6e1137] [cursor=pointer]:
+                - /url: https://www.reliancedigital.in/c/terms-of-use
+                - text: Terms of Use
+              - link "goto FAQs" [ref=f6e1138] [cursor=pointer]:
+                - /url: https://www.reliancedigital.in/c/faqs
+                - text: FAQs
+              - link "goto Cancellation and Returns Policy" [ref=f6e1139] [cursor=pointer]:
+                - /url: https://www.reliancedigital.in/c/cancellation-and-return-policy
+                - text: Cancellation and Returns Policy
+              - link "goto Pricing & Payments Policy" [ref=f6e1140] [cursor=pointer]:
+                - /url: https://www.reliancedigital.in/c/pricing-and-payments-policy
+                - text: Pricing & Payments Policy
+              - link "goto Privacy Policy" [ref=f6e1141] [cursor=pointer]:
+                - /url: https://www.reliancedigital.in/c/privacy-policy
+                - text: Privacy Policy
+              - link "goto E-waste Recycling Policy" [ref=f6e1142] [cursor=pointer]:
+                - /url: https://www.reliancedigital.in/c/e-waste-recycling-policy
+                - text: E-waste Recycling Policy
+              - link "goto EMI and Additional Cashback T&C" [ref=f6e1143] [cursor=pointer]:
+                - /url: https://www.reliancedigital.in/c/emi-and-additional-cashback-terms-and-conditions
+                - text: EMI and Additional Cashback T&C
+              - link "goto RelianceOne Loyalty Program T&C" [ref=f6e1144] [cursor=pointer]:
+                - /url: https://www.reliancedigital.in/c/relianceone-loyalty-program-terms-and-conditions
+                - text: RelianceOne Loyalty Program T&C
+              - link "goto Caution Notice" [ref=f6e1145] [cursor=pointer]:
+                - /url: https://www.reliancedigital.in/c/caution-notice
+                - text: Caution Notice
+        - generic [ref=f6e1146]:
+          - generic [ref=f6e1147]:
+            - img "footerBannerDataIcon" [ref=f6e1149]
+            - generic [ref=f6e1150]:
+              - generic [ref=f6e1151]: Experience Reliance digital app on mobile
+              - link [ref=f6e1154] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=in.digital.reliance
+                - img "Google Playstore" [ref=f6e1155]
+              - link [ref=f6e1158] [cursor=pointer]:
+                - /url: https://apps.apple.com/in/app/reliance-digital-shopping-app/id1513379107
+                - img "Apple Appstore" [ref=f6e1159]
+          - generic [ref=f6e1160]:
+            - generic [ref=f6e1161]: Follow us
+            - generic [ref=f6e1162]:
+              - link [ref=f6e1164] [cursor=pointer]:
+                - /url: https://www.facebook.com/reliancedigital/
+                - img "Facebook" [ref=f6e1165]
+              - link [ref=f6e1167] [cursor=pointer]:
+                - /url: https://twitter.com/reliancedigital
+                - img "Twitter" [ref=f6e1168]
+              - link [ref=f6e1170] [cursor=pointer]:
+                - /url: https://www.youtube.com/reliancedigital
+                - img "Youtube" [ref=f6e1171]
+        - generic [ref=f6e1172]:
+          - generic [ref=f6e1173]: Disclaimer
+          - generic [ref=f6e1174]: Product prices, offers and availability are subject to change from time to time. All prices are inclusive of taxes. Product colours & images are only for illustration and they may not exactly match with the actual product. Product specs are subject to change & may vary from actual product. While every care is taken to avoid inaccuracies in content, these are provided as is, without warranty of any kind.
+      - generic [ref=f6e1175]: Copyright © 2026 Reliance Digital. All rights reserved.
+  - status
+```
+
+# Test source
+
+```ts
+  1  | import { test } from '@playwright/test'
+  2  | 
+  3  | test('Windows Handling', async ({ page, context }) => {
+  4  | 
+  5  |     await page.goto('https://www.reliancedigital.in/');
+  6  | 
+  7  |     await page.locator('//div[@class="address-bar desktop-only show"]/descendant::div[@class="delivery-info"]//div[@class="navigation__menu__others"]//div[@class="navigation__container"]/descendant::a[@class="nav-items"]//div[text()=" Tablets "]').click();
+  8  |     await page.waitForLoadState();
+  9  |     await page.waitForTimeout(3000);
+  10 |     await page.mouse.wheel(0, 2000);
+  11 | 
+  12 |     const [newTab] = await Promise.all([
+  13 |         context.waitForEvent('page'),
+  14 |         page.locator('//div[@class="wrapper"]//a[@class="card-wrapper__body"]/child::h5[text()=" Asus Pad 30.98 cm (12.2 inch) Wi-Fi Tablet, 256 GB, 8 GB RAM, Pure White, T3201M5A-TL005DW "]').click()
+  15 |     ]);
+  16 | 
+  17 |     await newTab.waitForLoadState();
+  18 |     await newTab.locator('//div[@class="product-description-container"]//div[@aria-label="add to compare"]').click();
+  19 |     await newTab.waitForTimeout(2000);
+  20 |     await page.mouse.wheel(0, 2000);
+  21 | 
+  22 |     const [newTab2] = await Promise.all([
+  23 |         context.waitForEvent('page'),
+  24 |         page.locator('//div[@class="card-wrapper"]//a[@class="card-wrapper__body"]/child::h5[text()=" Moto Pad 70 Pro 32.25 cm (12.7 Inch) WiFi Tablet with Pen & Keyboard, 8 GB RAM, 256 GB, Pantone Titan, ZAJ70005IN "]').click()
+  25 |     ]);
+  26 | 
+  27 |     await newTab2.waitForLoadState();
+  28 |     await newTab2.locator('//div[@class="product-description-container"]//div[@aria-label="add to compare"]').click();
+  29 |     await newTab2.waitForTimeout(2000);
+  30 | 
+  31 |     await newTab2.locator('//div[@aria-label="Product comparison"]//button[@aria-label="Go to product comparison page"]').click();
+  32 |     await page.mouse.wheel(0, 1000);
+> 33 |     await newTab2.waitForTimeout(2000);
+     |                   ^ Error: page.waitForTimeout: Test timeout of 30000ms exceeded.
+  34 | });
+  35 | 
+  36 | 
+```

@@ -1,0 +1,2 @@
+Dialog message: You clicked a button
+Dialog type: alert
